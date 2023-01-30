@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: alertsnitch-config
-  namespace: prometheus-blackbox
-data:
-  ALERTSNITCH_DSN: "alertsnitch:alertsnitch@tcp(mysqldb)/alertsnitch"
-  ALERSTNITCH_BACKEND: "mysql"

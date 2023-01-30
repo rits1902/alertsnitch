@@ -22,8 +22,8 @@ spec:
       containers:
       - image: registry.gitlab.com/yakshaving.art/alertsnitch:0.2
         envFrom:
-        - configMapRef:
-            name: alertsnitch-config
+        - secretRef:
+            name: alertsnitch-secret
             optional: false
         imagePullPolicy: Always
         livenessProbe:
